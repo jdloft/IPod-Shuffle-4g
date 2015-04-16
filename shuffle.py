@@ -70,7 +70,7 @@ class Text2Speech(object):
 
     @staticmethod
     def pico2wave(out_wav_path, unicodetext):
-        subprocess.call(["pico2wave", "-l", "en-GB", "-w", out_wav_path, unicodetext])
+        subprocess.call(["./google-tts.sh", out_wav_path, unicodetext])
 
     @staticmethod
     def rhvoice(out_wav_path, unicodetext):
