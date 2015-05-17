@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Using $1 as wav out file and $2 as text"
+echo "Using $1 as wav out file and "$2" as text"
 SCRIPT="$(mktemp /tmp/tts-script.XXXXX.txt)"
 TMPMP3="$(mktemp /tmp/tmp-mp3.XXXXX.mp3)"
 echo "Writing script..."
