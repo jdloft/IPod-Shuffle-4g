@@ -7,4 +7,4 @@ echo $2 > $SCRIPT
 echo "Generating speech recording..."
 perl "$(dirname "$0")/speak.pl" en $SCRIPT $TMPMP3 > /dev/null
 echo "Converting sound file..."
-mpg123 -w $1 $TMPMP3 > /dev/null
+mpg123 -w $1 $TMPMP3 > /dev/null 2>&1
