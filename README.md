@@ -7,13 +7,13 @@ Forked from the [shuffle-db-ng project](https://code.google.com/p/shuffle-db-ng/
 
 Just put your audio files into the mass storage of your IPod and shuffle.py will do the rest
 ```bash
-$ python shuffle.py -h
-usage: shuffle.py [-h] [--disable-voiceover] [--rename-unicode]
-                  [--track-gain TRACK_GAIN]
-                  path
+$ ./shuffle.py -h
+usage: shuffle [-h] [--disable-voiceover] [--rename-unicode]
+               [--track-gain TRACK_GAIN] [--verbose]
+               [path]
 
 positional arguments:
-  path
+  path                  iPod root/mountpoint. Default: script dirname
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -61,6 +61,12 @@ layman --overlays="https://raw.githubusercontent.com/ahippo/rhvoice-gentoo-overl
 ACCEPT_KEYWORDS="~amd64" emerge -av app-accessibility/svox app-accessibility/rhvoice
 ```
 References to the overlays above: [ikelos](http://git.overlays.gentoo.org/gitweb/?p=dev/ikelos.git;a=summary), [ahippo-rhvoice-overlay](https://github.com/ahippo/rhvoice-gentoo-overlay)
+
+##### Mac OS X (suprise-surprise!)
+Runs smoothly with VoiceOver feature disabled (who needs it anyway).
+```bash
+./shuffle.py --disable-voiceover
+```
 
 ##TODO
 * Last.fm Scrobbler
