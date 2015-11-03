@@ -38,10 +38,11 @@ This script requires:
 
 * [Python 2.7](http://www.python.org/download/releases/2.7/)
 * [Mutagen](https://code.google.com/p/mutagen/)
-* [Perl](https://www.perl.org)
+* [Perl](https://www.perl.org) -- For Google TTS
 * [PicoSpeaker](http://picospeaker.tk/readme.php) -- for non-Russian files
 * [RHVoice (master branch, 3e31edced402a08771d2c48c73213982cbe9333e)](https://github.com/Olga-Yakovleva/RHVoice) -- for Russian files only
 * [SoX](http://sox.sourceforge.net) -- for Russian files only
+* [mpg123](http://www.mpg123.de/) -- Converting Google TTS files from MP3 to WAV
 
 ##### Ubuntu
 
